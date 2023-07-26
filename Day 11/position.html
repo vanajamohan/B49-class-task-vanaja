@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Example</title>
+    <style>
+.box{
+    width:100px;
+    height:100px;
+    background-color: aquamarine;
+    margin-bottom: 20px;
+    border: 2px solid magenta;
+}
+.relative-box{
+    position:relative;
+    top:40px
+}
+.static-box{
+    position:static;
+}
+    </style>
+</head>
+<body>
+    <div class="box static-box">Static Box</div>
+    <div class="box relative-box">Relative Box</div>
+    <div class="box fixed-box">Fixed Box</div>
+    <div class="box absolute-box">Absolute Box</div>
+    <div class="box sticky-box">Sticky Box</div>
+</body>
+</html>

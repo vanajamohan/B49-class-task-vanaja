@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="para1">Initial text
+        <p class="para">Item 1</p>
+        <p class="para">Item 2</p>
+        <p class="para">Item 3</p>
+        <p class="para">Item 4</p>
+        <p class="para">Item 5</p>
+    </div>
+    <script>
+        
+        const ele = document.querySelector(".para");
+        ele.style.color = "blue";
+        const paraElems = document.querySelectorAll(".para")
+        paraElems.forEach((elefor) =>
+        {
+            elefor.style.color = "red";
+        }
+        );
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+        .container{
+            border:1px solid blue;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+            background-color: yellowgreen;
+            padding: 10px;
+        }
+        .bench{
+            border: 1px solid red;
+            background-color: beige;
+        }
+        .flex{
+            border:1px solid black;
+            display: flex;
+            flex-direction:row;
+            justify-content: end;
+           /* flex-flow: column wrap ;*/
+          /* align-content: center;*/
+           /* flex-wrap: wrap;*/
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+            background-color: rgb(50, 177, 205);
+            padding: 20px;
+        }
+        .flex-item{
+            flex:0 0 auto;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+            border: 1px solid rgb(23, 2, 213);
+            background-color: rgb(145, 186, 216);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Grid</h1>
+<div class="container">
+<div class="bench" style="grid-row: 3; grid-column:2">Grid in 3rd row 2 column</div>
+<div class="bench">Grid 2</div>
+<div class="bench">Grid 3</div>
+<div class="bench">Grid 4</div>
+<div class="bench">Grid 5</div>
+<div class="bench">Grid 6</div>
+</div>
+<h1>Flex</h1>
+<div class="flex">
+    <div class="flex-item">Home</div>
+    <div class="flex-item">About Us</div>
+    <div class="flex-item">Contact</div>
+    <div class="flex-item">Help</div>
+</div>
+</body>
+</html>

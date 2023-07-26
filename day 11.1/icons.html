@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+            .flex{
+            border:1px solid black;
+            display: flex;
+            flex-direction:row;
+            justify-content: left;
+           /* flex-flow: column wrap ;*/
+          /* align-content: center;*/
+           /* flex-wrap: wrap;*/
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+            background-color: rgb(50, 177, 205);
+            padding: 20px;
+        }
+        .flex-item{
+            flex:0 0 auto;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+            border: 1px solid rgb(23, 2, 213);
+            background-color: rgb(145, 186, 216);
+        }
+    </style>
+</head>
+<body>
+    <h1>Icons Example</h1>
+    <div class="flex">
+        <div class="flex-item"><i class="fa fa-home"></i>Home</div>
+        <div class="flex-item"><i class="fa-solid fa-circle-info"></i>About Us</div>
+        <div class="flex-item"><i class="fa-solid fa-phone"></i>Contact</div>
+        <div class="flex-item"><i class="fa-solid fa-handshake-angle"></i>Help</div>
+    </div>
+</body>
+</html>

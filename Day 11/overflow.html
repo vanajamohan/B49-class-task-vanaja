@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverFlow</title>
+    <style>
+        .hidden{
+            background-image: linear-gradient(to right, rgb(144, 0, 255) , yellow);   
+            width: 200px;
+            height: 100px;
+            border: 1px solid;
+            overflow: hidden;
+        }
+        .scroll{
+            background-image: radial-gradient(circle, red, yellow, rgb(128, 0, 60));
+            width: 200px;
+            height: 100px;
+            border: 1px solid;
+            overflow: scroll;       }
+      .auto{
+        background-image: conic-gradient(red, rgb(4, 0, 255), green);     
+            width: 200px;
+            height: 100px;
+            border: 1px solid;
+            overflow: auto;       }
+        .visible{
+            background-image: linear-gradient(to right, rgb(144, 0, 255) , yellow);   
+            width: 200px;
+            height: 100px;
+            border: 1px solid;
+            overflow: visible;}
+    </style>
+</head>
+<body>
+    <div> Hidden</div>
+    <div class="hidden">
+            You can use the overflow property when 
+            you want to have better control of the 
+            layout. The overflow property specifies 
+            what happens if content overflows an 
+            element's box.
+    </div>
+    <div> Scroll</div>
+    <div class="scroll">
+            You can use the overflow property when 
+            you want to have better control of the 
+            layout. The overflow property specifies 
+            what happens if content overflows an 
+            element's box.
+    </div>
+    <div> auto</div>
+    <div class="auto">
+            You can use the overflow property when 
+            you want to have better control of the 
+            layout. The overflow property specifies 
+            what happens if content overflows an 
+            element's box.
+    </div>
+    <div> Visible</div>
+    <div class="visible">
+            You can use the overflow property when 
+            you want to have better control of the 
+            layout. The overflow property specifies 
+            what happens if content overflows an 
+            element's box.
+    </div>
+</body>
+</html>

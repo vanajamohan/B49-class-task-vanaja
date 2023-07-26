@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        .divclass{
+            border: 2px solid blueviolet;
+        }
+    </style>
+</head>
+<body>
+   <center> <h1>Click, MouseOver, MouseOut, Keydown Events</h1>
+    <div id="targetDiv" class="divclass">
+         <span id="spantext">Click here to check event</span>
+         <input type="text" id ="textbox">
+    </div>
+
+    <script>
+        const targetDiv = document.getElementById("targetDiv");
+        const text = document.getElementById("spantext");
+        const textbox = document.getElementById("textbox");
+        
+        targetDiv.addEventListener("click",function(){
+            text.innerText = "You Clicked the Element";
+            text.style.backgroundColor = "yellow";
+        });
+
+        targetDiv.addEventListener("mouseover",function(){
+            text.innerText = "You MouseOver the Element";
+            text.style.backgroundColor = "green";
+        });
+
+        targetDiv.addEventListener("mouseout",function(){
+            text.innerText = "You MouseOut the Element";
+            text.style.backgroundColor = "red";
+        });
+
+        textbox.addEventListener("keydown",function(){
+           
+            console.log(`You pressed : ${event.key} Key`);
+        });
+
+
+    </script>
+    </center>
+</body>
+</html>

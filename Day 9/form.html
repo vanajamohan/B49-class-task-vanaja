@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Form</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <style>
+        label{
+            color:brown;
+        }
+    </style>
+</head>
+<body style="background-color:rgb(218, 255, 144) ;">
+    <h1 style="color:blue;font-size:30px;">Bus Facility Request Form</h1>
+    <form>
+        <label for="name">Name</label>
+        <input type = "text" id="name"/>
+        <br/><br/>
+        <label for="email">Email</label>
+        <input type="email" id="email"/>
+        <br/><br/>
+        <label for="email">Department</label>
+        <select>
+            <option value="CSE">CSE</option>
+            <option value="IT">IT</option>
+            <option value="ECE">ECE</option>
+            <option value="Mech">Mech</option>
+            <option value="Civil">Civil</option>
+        </select>
+        <br/><br/>
+        <label for="year">Choose Year</label>
+        <input type="radio" name="year"/><label for="1stYear">1st</label>
+        <input type="radio" name="year"/><label for="2nd Year">2nd</label>
+        <input type="radio" name="year"/><label for="3rd Year">3rd</label>
+        <input type="radio" name="year"/><label for="4th Year">4th</label>
+        <br/><br/>
+        <label for="location">Drop Location</label>
+        <select>
+            <option value="CSE">Velechery</option>
+            <option value="IT">Madipakkam</option>
+            <option value="ECE">Guindy</option>
+            <option value="Mech">Ashok Nagar</option>
+            <option value="Civil">Vadapalani</option>
+        </select>
+        <br/><br/>
+        <label for="date">Facility Needed From ( ChooseDate)</label>
+        <input type="date" id="date"/>
+        <br/><br/>
+        <label for="service">Service Type:</label>
+        <input type="checkbox" name="pickup"/><label for="1stYear">Pick Up</label>
+        <input type="checkbox" name="drop"/><label for="2nd Year">Drop</label>
+        <br/><br/>
+        <label for="uloadid" style="color: rgb(243, 20, 20);">Upload ID Card</label>
+        <input type="file" id="password"/>
+        <br/><br/>
+        <input type="submit" value="Register"/>
+        <input type="submit" value="Cancel"/>
+        <br/><br/>
+    </form>
+</body>
+</html>
